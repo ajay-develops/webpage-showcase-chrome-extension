@@ -12,12 +12,11 @@ export default defineConfig({
     artifactTemplate: 'webpage-showcase-{{version}}-{{browser}}.zip',
     exclude: ['**/*.map'],
   },
-  manifest: ({ version }) => ({
+  manifest: () => ({
     name: 'Webpage Showcase',
     short_name: 'Webpage Showcase',
     description:
       'Stop wrestling with your mouse to get the perfect scroll speed. Webpage Showcase turns your browser into a professional camera dolly, giving you cinematic, repeatable, and tunable scrolls every single time.',
-    version,
     homepage_url: STORE_HOMEPAGE_URL,
     minimum_chrome_version: '109',
     permissions: ['storage', 'activeTab', 'scripting'],
