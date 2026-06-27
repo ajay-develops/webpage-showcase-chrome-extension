@@ -16,7 +16,7 @@ export default defineConfig({
     name: 'Webpage Showcase',
     short_name: 'Webpage Showcase',
     description:
-      'Stop wrestling with your mouse to get the perfect scroll speed. Webpage Showcase turns your browser into a professional camera dolly, giving you cinematic, repeatable, and tunable scrolls every single time.',
+      'Stop wrestling with your mouse. Cinematic auto-scroll for polished screen-recording demos on any webpage.',
     homepage_url: STORE_HOMEPAGE_URL,
     minimum_chrome_version: '109',
     permissions: ['storage', 'activeTab', 'scripting'],
