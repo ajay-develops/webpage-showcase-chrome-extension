@@ -1,0 +1,28 @@
+{
+  "name": "page-showcase-extension",
+  "version": "1.0.0",
+  "description": "Cinematic, repeatable, tunable webpage scrolls for polished screen recordings.",
+  "author": "Ajay Kumar <ajaydevelops38@gmail.com>",
+  "homepage": "https://ajay-develops.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajay-develops/webpage-showcase-chrome-extension.git"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt build && wxt zip",
+    "generate-icons": "node scripts/generate-icons.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.304",
+    "sharp": "^0.34.2",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9",
+    "wxt": "^0.20.0"
+  }
+}

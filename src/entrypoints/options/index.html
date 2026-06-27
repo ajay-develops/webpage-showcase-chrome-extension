@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Showcase — Options</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="options">
+      <header class="options__header">
+        <h1>Webpage Showcase Settings</h1>
+        <p>Configure sections and scroll timing per website.</p>
+      </header>
+
+      <section class="panel">
+        <label class="field field--wide">
+          <span>Website</span>
+          <select id="hostname-select"></select>
+        </label>
+        <div class="row">
+          <button type="button" id="redetect-btn" class="btn">Re-detect sections</button>
+          <button type="button" id="save-btn" class="btn btn--primary">Save</button>
+        </div>
+        <p class="hint" id="save-status"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Global timing</h2>
+        <div class="grid">
+          <label class="field">
+            <span>Header offset (px)</span>
+            <input type="number" id="header-offset" min="0" max="300" />
+          </label>
+          <label class="field">
+            <span>Fast transition (ms)</span>
+            <input type="number" id="fast-transition" min="200" max="5000" />
+          </label>
+          <label class="field">
+            <span>Scroll speed (px/s)</span>
+            <input type="number" id="scroll-speed" min="50" max="500" />
+          </label>
+          <label class="field">
+            <span>Min section scroll (ms)</span>
+            <input type="number" id="min-scroll" min="500" max="30000" />
+          </label>
+          <label class="field">
+            <span>Max section scroll (ms)</span>
+            <input type="number" id="max-scroll" min="1000" max="60000" />
+          </label>
+          <label class="field">
+            <span>Section start pause (ms)</span>
+            <input type="number" id="section-pause" min="0" max="10000" />
+          </label>
+          <label class="field">
+            <span>Hero start pause (ms)</span>
+            <input type="number" id="hero-pause" min="0" max="10000" />
+          </label>
+          <label class="field">
+            <span>Intro delay (ms)</span>
+            <input type="number" id="intro-delay" min="0" max="5000" />
+          </label>
+          <label class="field">
+            <span>Countdown (seconds)</span>
+            <input type="number" id="countdown" min="0" max="10" />
+          </label>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel__head">
+          <h2>Sections</h2>
+          <button type="button" id="add-stop-btn" class="btn">Add section</button>
+        </div>
+        <div id="stops-list" class="stops"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Import / Export</h2>
+        <div class="row">
+          <button type="button" id="export-btn" class="btn">Export JSON</button>
+          <label class="btn btn--file">
+            Import JSON
+            <input type="file" id="import-file" accept="application/json" hidden />
+          </label>
+        </div>
+      </section>
+
+      <footer class="options__footer">
+        Webpage Showcase by
+        <a href="https://ajay-develops.vercel.app" target="_blank" rel="noopener noreferrer"
+          >Ajay Kumar</a
+        >
+        ·
+        <a href="https://ajay-develops.github.io/webpage-showcase-chrome-extension/privacy-policy.html" target="_blank" rel="noopener noreferrer"
+          >Privacy</a
+        >
+      </footer>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

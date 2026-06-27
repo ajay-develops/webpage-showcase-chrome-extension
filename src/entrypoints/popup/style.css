@@ -1,0 +1,137 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: canvas;
+  color: canvasText;
+}
+
+.popup {
+  padding: 14px 16px 16px;
+}
+
+.popup__header {
+  margin-bottom: 10px;
+}
+
+.popup__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.popup__hostname {
+  margin: 4px 0 0;
+  font-size: 12px;
+  opacity: 0.7;
+  word-break: break-all;
+}
+
+.popup__status {
+  margin: 0 0 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: color-mix(in srgb, canvasText 8%, transparent);
+  font-size: 13px;
+}
+
+.popup__detect {
+  margin: -6px 0 10px;
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.popup__actions {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.btn {
+  border: 1px solid color-mix(in srgb, canvasText 18%, transparent);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn--primary {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn--secondary {
+  background: color-mix(in srgb, canvasText 6%, canvas);
+}
+
+.btn--ghost {
+  background: transparent;
+}
+
+.popup__settings {
+  border-top: 1px solid color-mix(in srgb, canvasText 12%, transparent);
+  padding-top: 12px;
+}
+
+.popup__settings-title {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 1fr 88px;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+.field input {
+  width: 100%;
+  border: 1px solid color-mix(in srgb, canvasText 18%, transparent);
+  border-radius: 6px;
+  padding: 6px 8px;
+  font: inherit;
+  background: canvas;
+  color: canvasText;
+}
+
+.popup__footer {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid color-mix(in srgb, canvasText 10%, transparent);
+  font-size: 11px;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.popup__footer a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.popup__footer a:hover {
+  text-decoration: underline;
+}

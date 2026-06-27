@@ -1,0 +1,8 @@
+node_modules/
+output/
+.wxt/
+dist/
+assets/icon-128.png
+*.log
+.DS_Store
+*.zip

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Showcase</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <header class="popup__header">
+        <h1 class="popup__title">Webpage Showcase</h1>
+        <p class="popup__hostname" id="hostname">—</p>
+      </header>
+
+      <p class="popup__status" id="status">Ready</p>
+      <p class="popup__detect" id="detect-info" hidden></p>
+
+      <div class="popup__actions">
+        <button type="button" id="start-btn" class="btn btn--primary">
+          Start Showcase
+        </button>
+        <button type="button" id="stop-btn" class="btn btn--secondary" disabled>
+          Stop Showcase
+        </button>
+        <button type="button" id="configure-btn" class="btn btn--ghost">
+          Configure Sections
+        </button>
+      </div>
+
+      <section class="popup__settings">
+        <h2 class="popup__settings-title">Quick settings</h2>
+        <label class="field">
+          <span>Header offset (px)</span>
+          <input type="number" id="header-offset" min="0" max="300" step="1" />
+        </label>
+        <label class="field">
+          <span>Scroll speed (px/s)</span>
+          <input type="number" id="scroll-speed" min="50" max="500" step="10" />
+        </label>
+        <label class="field">
+          <span>Countdown (seconds)</span>
+          <input type="number" id="countdown" min="0" max="10" step="1" />
+        </label>
+      </section>
+
+      <footer class="popup__footer">
+        by
+        <a href="https://ajay-develops.vercel.app" target="_blank" rel="noopener noreferrer"
+          >Ajay Kumar</a
+        >
+      </footer>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
