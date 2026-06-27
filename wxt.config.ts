@@ -20,7 +20,6 @@ export default defineConfig({
     homepage_url: STORE_HOMEPAGE_URL,
     minimum_chrome_version: '109',
     permissions: ['storage', 'activeTab', 'scripting'],
-    host_permissions: ['<all_urls>'],
     icons: {
       16: 'icon/16.png',
       32: 'icon/32.png',

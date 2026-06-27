@@ -40,8 +40,9 @@ Use this checklist when submitting **Webpage Showcase** to the [Chrome Web Store
    |------------|---------------|
    | `storage` | Saves per-website scroll tour configs locally on the user's device. |
    | `activeTab` | Accesses the current tab only when the user clicks Start or Stop. |
-   | `scripting` | Injects the scroll engine into the active tab on user action. |
-   | Host permission `<all_urls>` | Runs automated scroll tours on marketing/docs sites the user opens; configs are keyed by hostname. No data is sent to external servers. |
+   | `scripting` | Injects the scroll engine into the active tab when the user clicks Start or Stop. |
+
+   No broad host permissions (`<all_urls>`). The extension does not access sites in the background.
 
 7. **Single purpose description** (example):
 

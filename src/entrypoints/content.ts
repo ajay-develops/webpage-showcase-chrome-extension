@@ -14,7 +14,7 @@ import type { ContentInboundMessage, ContentOutboundMessage } from '../types/mes
 import type { ShowcaseConfig, ShowcaseTourHandle } from '../types/showcase';
 
 export default defineContentScript({
-  matches: ['<all_urls>'],
+  registration: 'runtime',
   runAt: 'document_idle',
   main() {
     let tourHandle: ShowcaseTourHandle | null = null;

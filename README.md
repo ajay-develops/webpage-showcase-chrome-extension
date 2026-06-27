@@ -51,7 +51,7 @@ See [`store/GITHUB_PAGES_SETUP.md`](store/GITHUB_PAGES_SETUP.md) for GitHub Page
 Quick steps:
 
 1. Update `STORE_HOMEPAGE_URL` in [`wxt.config.ts`](wxt.config.ts) and `author` in [`package.json`](package.json)
-2. Host [`store/privacy-policy.html`](store/privacy-policy.html) at a public HTTPS URL (required for `<all_urls>`)
+2. Host [`docs/privacy-policy.html`](docs/privacy-policy.html) on GitHub Pages (see [`store/GITHUB_PAGES_SETUP.md`](store/GITHUB_PAGES_SETUP.md))
 3. Build the upload zip: `npm run zip`
 4. Upload the zip from `output/` in the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole)
 
@@ -122,11 +122,10 @@ Export/import full config JSON from the Options page.
 | Permission | Why |
 |------------|-----|
 | `storage` | Persist per-domain section configs locally |
-| `activeTab` | Access the current tab when you click the extension |
-| `scripting` | Inject scroll engine on demand |
-| `<all_urls>` | Run on arbitrary sites + hostname-keyed configs |
+| `activeTab` | Access the current tab when you open the extension or click Start/Stop |
+| `scripting` | Inject the scroll engine on user action |
 
-**Tighter alternative:** `activeTab` only (no `<all_urls>`) limits injection to user-gestured tabs but prevents pre-loading configs for sites you haven't visited. This extension uses `<all_urls>` for smoother first-run auto-detect on any site.
+No broad host permissions — the extension only runs on the tab you are viewing after you invoke it.
 
 ## Privacy
 
